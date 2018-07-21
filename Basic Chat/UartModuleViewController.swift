@@ -287,11 +287,13 @@ class UartModuleViewController: UIViewController, CBPeripheralManagerDelegate, U
     @IBAction func toggleFadeSwitch(_ sender: UISwitch) {
         if fadeSwitch.isOn
         {
-            writeValue(data: "FLSHFD 1\n")
+            writeValue(data: "FLSH3 1\n")
+            //writeValue(data: "FLSHFD 1\n")
         }
         else
         {
-            writeValue(data: "FLSHFD 0\n")
+            writeValue(data: "FLSH3 0\n")
+            //writeValue(data: "FLSHFD 0\n")
         }
     }
     @IBOutlet weak var BrianSwitch: UISwitch!
